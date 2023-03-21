@@ -1,3 +1,14 @@
 module.exports = {
-  extends: require.resolve('@umijs/lint/dist/config/eslint'),
+  env: {
+    es6: true,
+    browser: true,
+  },
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 2020,
+  },
+  extends: [
+   
+  ],
+  plugins: ['@typescript-eslint'],
 };
