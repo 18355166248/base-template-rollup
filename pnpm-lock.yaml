@@ -10,6 +10,7 @@ specifiers:
   '@rollup/plugin-terser': ^0.4.0
   '@rollup/plugin-typescript': ^11.0.0
   '@types/lodash-es': ^4.17.7
+  '@types/node': ^18.15.5
   '@typescript-eslint/eslint-plugin': ^5.56.0
   '@typescript-eslint/parser': ^5.56.0
   eslint: ^8.36.0
@@ -34,6 +35,7 @@ devDependencies:
   '@rollup/plugin-terser': registry.npmmirror.com/@rollup/plugin-terser/0.4.0_rollup@3.20.0
   '@rollup/plugin-typescript': registry.npmmirror.com/@rollup/plugin-typescript/11.0.0_hy5v2w3xaqxocfx6d2ai5z6ari
   '@types/lodash-es': registry.npmmirror.com/@types/lodash-es/4.17.7
+  '@types/node': registry.npmmirror.com/@types/node/18.15.5
   '@typescript-eslint/eslint-plugin': registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.56.0_2hcjazgfnbtq42tcc73br2vup4
   '@typescript-eslint/parser': registry.npmmirror.com/@typescript-eslint/parser/5.56.0_j4766f7ecgqbon3u7zlxn5zszu
   eslint: registry.npmmirror.com/eslint/8.36.0

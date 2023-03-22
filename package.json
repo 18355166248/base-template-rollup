@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "rimraf dist && rollup --bundleConfigAsCjs -c rollup.config.js --environment NODE_ENV:development",
+    "dev": "rimraf dist && rollup --bundleConfigAsCjs --configPlugin typescript --config rollup.config.ts --environment NODE_ENV:development",
     "build": "rimraf dist && rollup -c rollup.config.js --environment NODE_ENV:production",
     "lint": "eslint --ext .js,.ts,.d.ts src/",
     "prepare": "husky install"
@@ -37,6 +37,7 @@
     "@rollup/plugin-terser": "^0.4.0",
     "@rollup/plugin-typescript": "^11.0.0",
     "@types/lodash-es": "^4.17.7",
+    "@types/node": "^18.15.5",
     "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@typescript-eslint/parser": "^5.56.0",
     "eslint": "^8.36.0",
