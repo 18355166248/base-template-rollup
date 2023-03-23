@@ -7,7 +7,7 @@ import replace from '@rollup/plugin-replace';
 import terser from '@rollup/plugin-terser';
 import rollup from 'rollup';
 
-function resolveFile(filePath: string) {
+function resolveFile(filePath) {
   return path.join(__dirname, filePath);
 }
 
@@ -16,7 +16,7 @@ const outputName = 'baseTemplatRollup';
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = process.env.NODE_ENV === 'production';
 
-function getOptions(mode: 'esm' | 'cjs' | 'iife') {
+function getOptions(mode) {
   const result = {
     input: resolveFile('src/index.ts'),
     output: {
@@ -64,5 +64,5 @@ if (isDev) {
   });
 }
 
-const modes = ['esm', 'cjs', 'iife'] as ['esm', 'cjs', 'iife'];
+const modes = ['esm', 'cjs', 'iife'];
 export default modes.map((mode) => getOptions(mode));

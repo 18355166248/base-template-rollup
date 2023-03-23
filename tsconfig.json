@@ -6,9 +6,7 @@
     "esModuleInterop": true,
     "jsx": "react",
     "baseUrl": "./",
-    "paths": {
-      "@": ["src"]
-    },
+    "paths": {},
     "useDefineForClassFields": true,
     "target": "esnext",
     "module": "esnext",
